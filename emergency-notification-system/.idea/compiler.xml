@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="api-gateway" />
         <module name="api-test-service" />
+        <module name="user-service" />
         <module name="eureka-naming-server" />
       </profile>
     </annotationProcessing>
@@ -21,6 +22,7 @@
       <module name="api-test-service" options="-parameters" />
       <module name="ens" options="-parameters" />
       <module name="eureka-naming-server" options="-parameters" />
+      <module name="user-service" options="-parameters" />
     </option>
   </component>
 </project>
