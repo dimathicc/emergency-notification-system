@@ -13,6 +13,9 @@ public class ApiGatewayConfiguration {
                 .route(p -> p
                         .path("/test/**")
                         .uri("lb://api-service"))
+                .route(p -> p
+                        .path("/users/**")
+                        .uri("lb://user-service"))
                 .build();
     }
 }
