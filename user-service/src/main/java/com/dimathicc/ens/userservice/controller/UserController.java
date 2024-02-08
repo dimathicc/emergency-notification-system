@@ -27,4 +27,19 @@ public class UserController {
     public ResponseEntity<Long> createUser(@Valid @RequestBody UserRequest request) {
         return ResponseEntity.status(HttpStatus.CREATED).body(userService.createUser(request));
     }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<UserResponse> retrieveUserById(@PathVariable Long id) {
+        return ResponseEntity.status(HttpStatus.OK).body(userService.retrieveUserById(id));
+    }
+
+    @PatchMapping("/{id}")
+    public ResponseEntity<UserResponse> updateUser(@PathVariable Long id, @RequestBody UserRequest request) {
+        return ResponseEntity.status(HttpStatus.OK).body(userService.updateUser(id, request));
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Boolean> deleteUserById(@PathVariable Long id) {
+        return ResponseEntity.status(HttpStatus.OK).body(userService.deleteById(id));
+    }
 }
