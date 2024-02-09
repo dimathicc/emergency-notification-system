@@ -5,22 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84601ce2-1429-4681-a31e-95b64b028e27" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../api-test-service/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api-test-service/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api-test-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api-test-service/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api-test-service/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api-test-service/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api-test-service/src/main/java/com/dimathicc/ens/apitestservice/ApiTestServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api-test-service/src/main/java/com/dimathicc/ens/apitestservice/controller/TestController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api-test-service/src/main/resources/application.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api-test-service/src/test/java/com/dimathicc/ens/apitestservice/ApiTestServiceApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/68e96097-beca-45cc-a834-59a2223b8e13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/68e96097-beca-45cc-a834-59a2223b8e13.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/com/dimathicc/ens/userservice/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/dimathicc/ens/userservice/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/com/dimathicc/ens/userservice/mapper/EntityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/dimathicc/ens/userservice/mapper/EntityMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/com/dimathicc/ens/userservice/dto/UserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/dimathicc/ens/userservice/dto/UserRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/com/dimathicc/ens/userservice/dto/UserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/dimathicc/ens/userservice/dto/UserResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/com/dimathicc/ens/userservice/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/dimathicc/ens/userservice/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/com/dimathicc/ens/userservice/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/dimathicc/ens/userservice/repository/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/com/dimathicc/ens/userservice/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/dimathicc/ens/userservice/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -100,6 +89,11 @@
     ]
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.dimathicc.ens.userservice.exception" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -115,15 +109,6 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <module name="api-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.dimathicc.ens.apigateway.ApiGatewayApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ApiTestServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-17" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <module name="api-test-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dimathicc.ens.apitestservice.ApiTestServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -150,7 +135,6 @@
     </configuration>
     <list>
       <item itemvalue="Spring Boot.ApiGatewayApplication" />
-      <item itemvalue="Spring Boot.ApiTestServiceApplication" />
       <item itemvalue="Spring Boot.EurekaNamingServerApplication" />
       <item itemvalue="Spring Boot.UserServiceApplication" />
     </list>
@@ -173,7 +157,7 @@
       <updated>1707209291700</updated>
       <workItem from="1707209292767" duration="9667000" />
       <workItem from="1707303523697" duration="10816000" />
-      <workItem from="1707376185617" duration="909000" />
+      <workItem from="1707376185617" duration="7101000" />
     </task>
     <servers />
   </component>

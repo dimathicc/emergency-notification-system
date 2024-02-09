@@ -2,6 +2,9 @@ package com.dimathicc.ens.userservice.service;
 
 import com.dimathicc.ens.userservice.dto.UserRequest;
 import com.dimathicc.ens.userservice.dto.UserResponse;
+import com.dimathicc.ens.userservice.exception.UserNotFoundException;
+import com.dimathicc.ens.userservice.exception.UserRegistrationException;
+import com.dimathicc.ens.userservice.exception.UserUpdateException;
 import com.dimathicc.ens.userservice.mapper.UserMapper;
 import com.dimathicc.ens.userservice.model.User;
 import com.dimathicc.ens.userservice.repository.UserRepository;
@@ -25,13 +28,13 @@ public class UserService {
                 .map(mapper::mapToEntity)
                 .map(repository::save)
                 .map(User::getId)
-                .orElseThrow();
+                .orElseThrow(() -> new UserRegistrationException("Can't register user"));
     }
 
     public UserResponse retrieveUserById(Long id) {
         return repository.findById(id)
                 .map(mapper::mapToResponseDto)
-                .orElseThrow();
+                .orElseThrow(() -> new UserNotFoundException("User with id: " + id + " not found"));
     }
 
     public UserResponse updateUser(Long id, UserRequest request) {
@@ -39,12 +42,16 @@ public class UserService {
                 .map(user -> mapper.update(request, user))
                 .map(repository::saveAndFlush)
                 .map(mapper::mapToResponseDto)
-                .orElseThrow();
+                .orElseThrow(() -> new UserUpdateException("can't update user information"));
     }
 
     public Boolean deleteById(Long id) {
         return repository.findById(id)
                 .map(user -> { repository.delete(user); return user; })
                 .isPresent();
+    }
+
+    public boolean existsByEmail(String email) {
+        return repository.existsByEmail(email);
     }
 }
