@@ -6,10 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="84601ce2-1429-4681-a31e-95b64b028e27" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/com/dimathicc/ens/userservice/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/dimathicc/ens/userservice/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/com/dimathicc/ens/userservice/dto/UserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/dimathicc/ens/userservice/dto/UserRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/com/dimathicc/ens/userservice/dto/UserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/dimathicc/ens/userservice/dto/UserResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/com/dimathicc/ens/userservice/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/dimathicc/ens/userservice/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/com/dimathicc/ens/userservice/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/dimathicc/ens/userservice/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/com/dimathicc/ens/userservice/service/UserExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/dimathicc/ens/userservice/controller/UserExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/com/dimathicc/ens/userservice/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/dimathicc/ens/userservice/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,6 +95,7 @@
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.dimathicc.ens.userservice.exception" />
+      <recent name="com.dimathicc.ens.userservice.util" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -157,7 +161,9 @@
       <updated>1707209291700</updated>
       <workItem from="1707209292767" duration="9667000" />
       <workItem from="1707303523697" duration="10816000" />
-      <workItem from="1707376185617" duration="7101000" />
+      <workItem from="1707376185617" duration="9677000" />
+      <workItem from="1707472145425" duration="5618000" />
+      <workItem from="1707638356882" duration="4600000" />
     </task>
     <servers />
   </component>

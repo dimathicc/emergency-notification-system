@@ -1,18 +1,19 @@
 package com.dimathicc.ens.userservice.dto;
 
 import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import org.springframework.stereotype.Component;
 
 
 public record UserRequest(
-        @NotNull
+        @NotBlank(message = "Имя не должно быть пустым")
         String name,
         @Email
-        @NotNull
+        @NotBlank(message = "Почта не должна быть пустой")
         String email,
-        @NotNull
+        @NotBlank(message = "Телефон не должен быть пустым")
         String phone,
-        @NotNull
+        @NotBlank(message = "Telegram ID не должен быть пустым")
         String telegramId
 ) {}

@@ -2,20 +2,20 @@ package com.dimathicc.ens.userservice.controller;
 
 import com.dimathicc.ens.userservice.dto.UserRequest;
 import com.dimathicc.ens.userservice.dto.UserResponse;
-import com.dimathicc.ens.userservice.model.User;
-import com.dimathicc.ens.userservice.repository.UserRepository;
 import com.dimathicc.ens.userservice.service.UserService;
 import jakarta.validation.Valid;
-import lombok.RequiredArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-
 @RestController
-@RequestMapping("/users")
+@RequestMapping("/api/users")
 public class UserController {
+
+    Logger log = LoggerFactory.getLogger(UserController.class);
 
     private final UserService userService;
 

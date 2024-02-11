@@ -2,6 +2,7 @@ package com.dimathicc.ens.userservice.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
 import org.hibernate.proxy.HibernateProxy;
@@ -14,6 +15,11 @@ import java.util.Objects;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity(name = "users")
+@Table(uniqueConstraints = {
+        @UniqueConstraint(columnNames = {"email"}),
+        @UniqueConstraint(columnNames = {"phone"}),
+        @UniqueConstraint(columnNames = {"telegram_id"})
+})
 
 public class User {
     @Id

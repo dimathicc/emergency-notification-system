@@ -5,6 +5,7 @@ import com.dimathicc.ens.userservice.dto.UserResponse;
 import com.dimathicc.ens.userservice.exception.UserNotFoundException;
 import com.dimathicc.ens.userservice.exception.UserRegistrationException;
 import com.dimathicc.ens.userservice.exception.UserUpdateException;
+import com.dimathicc.ens.userservice.exception.UserValidationException;
 import com.dimathicc.ens.userservice.mapper.UserMapper;
 import com.dimathicc.ens.userservice.model.User;
 import com.dimathicc.ens.userservice.repository.UserRepository;
@@ -24,6 +25,9 @@ public class UserService {
     }
 
     public Long createUser(UserRequest request) {
+        if (repository.existsByEmailOrPhoneOrTelegramId(request.email(), request.phone(), request.telegramId())) {
+            throw new UserValidationException("Пользователь с таким email/phone/telegram уже существует");
+        }
         return Optional.of(request)
                 .map(mapper::mapToEntity)
                 .map(repository::save)
@@ -49,9 +53,5 @@ public class UserService {
         return repository.findById(id)
                 .map(user -> { repository.delete(user); return user; })
                 .isPresent();
-    }
-
-    public boolean existsByEmail(String email) {
-        return repository.existsByEmail(email);
     }
 }

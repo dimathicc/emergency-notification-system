@@ -1,9 +1,8 @@
-package com.dimathicc.ens.userservice.service;
+package com.dimathicc.ens.userservice.controller;
 
 import com.dimathicc.ens.userservice.dto.ErrorResponse;
-import com.dimathicc.ens.userservice.exception.UserNotFoundException;
-import com.dimathicc.ens.userservice.exception.UserRegistrationException;
-import com.dimathicc.ens.userservice.exception.UserUpdateException;
+import com.dimathicc.ens.userservice.exception.*;
+import jakarta.xml.bind.ValidationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -16,7 +15,10 @@ public class UserExceptionHandler {
 
     @ExceptionHandler({
             UserRegistrationException.class,
-            UserUpdateException.class
+            UserUpdateException.class,
+            UserValidationException.class,
+            ReadingUserFromXlsxException.class,
+            FileDownloadException.class
     })
     public ResponseEntity<ErrorResponse> handleBadRequestException(Exception e) {
         return defaultErrorResponse(e, HttpStatus.BAD_REQUEST);
