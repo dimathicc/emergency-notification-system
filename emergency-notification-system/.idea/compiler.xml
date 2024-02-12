@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="api-gateway" />
         <module name="eureka-naming-server" />
+        <module name="security-service" />
       </profile>
       <profile name="Annotation profile for user-service" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -32,6 +33,7 @@
       <module name="api-test-service" options="-parameters" />
       <module name="ens" options="-parameters" />
       <module name="eureka-naming-server" options="-parameters" />
+      <module name="security-service" options="-parameters" />
       <module name="user-service" options="-parameters" />
     </option>
   </component>
