@@ -1,10 +1,9 @@
-package com.dimathicc.ens.userservice.service;
+package com.dimathicc.ens.fileservice.service;
 
-import com.dimathicc.ens.userservice.dto.UserRequest;
-import com.dimathicc.ens.userservice.exception.FileDownloadException;
-import com.dimathicc.ens.userservice.exception.ReadingUserFromXlsxException;
-import com.dimathicc.ens.userservice.model.User;
-import com.dimathicc.ens.userservice.repository.UserRepository;
+import com.dimathicc.ens.fileservice.dto.UserRequest;
+import com.dimathicc.ens.fileservice.dto.UserResponse;
+import com.dimathicc.ens.fileservice.exception.FileDownloadException;
+import com.dimathicc.ens.fileservice.exception.WorkbookCreateException;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -20,38 +19,42 @@ import java.util.List;
 @Service
 public class FileReaderService {
 
-    private final UserService userService;
-    private final UserRepository userRepository;
+    private final UserClient userClient;
 
-    public FileReaderService(UserService userService, UserRepository userRepository) {
-        this.userService = userService;
-        this.userRepository = userRepository;
+    public FileReaderService(UserClient userClient) {
+        this.userClient = userClient;
     }
 
-    public boolean readUsersFromXlsx(MultipartFile file) {
+    public boolean createUsersFromXlsx(MultipartFile file) {
         Workbook workbook;
         try {
             workbook = new XSSFWorkbook(file.getInputStream());
-            Sheet sheet = workbook.getSheetAt(0);
-
-            for (Row row : sheet) {
-                String name = row.getCell(0).toString();
-                String email = row.getCell(1).toString();
-                String phone = row.getCell(2).toString();
-                String telegramId = row.getCell(3).toString();
-
-                UserRequest userRequest = new UserRequest(name, email, phone, telegramId);
-                userService.createUser(userRequest);
-
-            }
         } catch (IOException e) {
-            throw new ReadingUserFromXlsxException(e.getMessage());
+            throw new WorkbookCreateException(e.getMessage());
+        }
+        Sheet sheet = workbook.getSheetAt(0);
+        for (Row row : sheet) {
+
+            try {
+                userClient.createUser(
+                        UserRequest.builder()
+                                .name(row.getCell(0).toString())
+                                .email(row.getCell(1).toString())
+                                .phone(row.getCell(2).toString())
+                                .telegramId(row.getCell(3).toString())
+                                .build()
+                );
+            } catch (RuntimeException e) {
+                throw new RuntimeException(e.getMessage());
+            }
         }
         return true;
     }
 
     public byte[] downloadFileWithUsers() {
-        List<User> users = userRepository.findAll();
+        List<UserResponse> users = userClient.retrieveAllUsers().getBody();
+
+        assert users != null;
 
         try (Workbook workbook = new XSSFWorkbook()) {
             Sheet sheet = workbook.createSheet("Users");
@@ -64,13 +67,13 @@ public class FileReaderService {
             row.createCell(4).setCellValue("Telegram ID");
 
             int counter = 0;
-            for (User user : users) {
+            for (UserResponse user : users) {
                 Row newRow = sheet.createRow(counter++);
-                newRow.createCell(0).setCellValue(user.getId());
-                newRow.createCell(1).setCellValue(user.getName());
-                newRow.createCell(2).setCellValue(user.getEmail());
-                newRow.createCell(3).setCellValue(user.getPhone());
-                newRow.createCell(4).setCellValue(user.getTelegramId());
+                newRow.createCell(0).setCellValue(user.id());
+                newRow.createCell(1).setCellValue(user.name());
+                newRow.createCell(2).setCellValue(user.email());
+                newRow.createCell(3).setCellValue(user.phone());
+                newRow.createCell(4).setCellValue(user.telegramId());
             }
 
             ByteArrayOutputStream outputStream = new ByteArrayOutputStream();

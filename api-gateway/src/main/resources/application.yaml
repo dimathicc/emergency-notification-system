@@ -1,6 +1,11 @@
 spring:
   application:
     name: api-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
 
 server:
   port: 8765

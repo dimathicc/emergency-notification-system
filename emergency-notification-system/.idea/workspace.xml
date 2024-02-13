@@ -4,7 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84601ce2-1429-4681-a31e-95b64b028e27" name="Changes" comment="" />
+    <list default="true" id="84601ce2-1429-4681-a31e-95b64b028e27" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../api-gateway/src/main/java/com/dimathicc/ens/apigateway/ApiGatewayConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/src/main/java/com/dimathicc/ens/apigateway/ApiGatewayConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api-gateway/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../security-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/controller/ExampleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/controller/ExampleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/com/dimathicc/ens/userservice/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../file-service/src/main/java/com/dimathicc/ens/fileservice/controller/FileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/com/dimathicc/ens/userservice/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/dimathicc/ens/userservice/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/com/dimathicc/ens/userservice/controller/UserExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/dimathicc/ens/userservice/exception/UserExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/com/dimathicc/ens/userservice/dto/UserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/dimathicc/ens/userservice/dto/UserResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/com/dimathicc/ens/userservice/exception/FileDownloadException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../file-service/src/main/java/com/dimathicc/ens/fileservice/exception/FileDownloadException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/com/dimathicc/ens/userservice/exception/ReadingUserFromXlsxException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../file-service/src/main/java/com/dimathicc/ens/fileservice/exception/ReadingUserFromXlsxException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/com/dimathicc/ens/userservice/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/dimathicc/ens/userservice/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/com/dimathicc/ens/userservice/service/FileReaderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../file-service/src/main/java/com/dimathicc/ens/fileservice/service/FileReaderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/com/dimathicc/ens/userservice/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/dimathicc/ens/userservice/service/UserService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,6 +58,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -62,10 +85,13 @@
     "Spring Boot.ApiGatewayApplication.executor": "Run",
     "Spring Boot.ApiTestServiceApplication.executor": "Run",
     "Spring Boot.EurekaNamingServerApplication.executor": "Run",
+    "Spring Boot.FileServiceApplication.executor": "Run",
+    "Spring Boot.SecurityServiceApplication.executor": "Run",
     "Spring Boot.UserServiceApplication.executor": "Run",
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "openjdk-17",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/dmitryshvalev/Downloads/Projects/ens/file-service/src/main/java/com/dimathicc/ens/fileservice/dto",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -86,9 +112,16 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.dimathicc.ens.fileservice.exception" />
       <recent name="com.dimathicc.ens.securityservice.exception" />
       <recent name="com.dimathicc.ens.userservice.exception" />
       <recent name="com.dimathicc.ens.userservice.util" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../file-service/src/main/java/com/dimathicc/ens/fileservice/dto" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.dimathicc.ens.fileservice.dto" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -128,6 +161,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FileServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="file-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dimathicc.ens.fileservice.FileServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SecurityServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="security-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.dimathicc.ens.securityservice.SecurityServiceApplication" />
@@ -147,6 +187,7 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.All in security-service" />
+      <item itemvalue="Spring Boot.FileServiceApplication" />
       <item itemvalue="Spring Boot.SecurityServiceApplication" />
       <item itemvalue="Spring Boot.ApiGatewayApplication" />
       <item itemvalue="Spring Boot.EurekaNamingServerApplication" />
@@ -179,7 +220,7 @@
       <workItem from="1707303523697" duration="10816000" />
       <workItem from="1707376185617" duration="9677000" />
       <workItem from="1707472145425" duration="5618000" />
-      <workItem from="1707638356882" duration="11703000" />
+      <workItem from="1707638356882" duration="27646000" />
     </task>
     <servers />
   </component>
