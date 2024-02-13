@@ -19,22 +19,9 @@ import java.util.List;
 public class FileController {
 
     private final FileReaderService readerService;
-    private final UserClient client;
 
-    public FileController(FileReaderService readerService, UserClient client) {
+    public FileController(FileReaderService readerService) {
         this.readerService = readerService;
-        this.client = client;
-    }
-
-    @GetMapping("/test")
-    public List<UserResponse> test() {
-        return client.retrieveAllUsers().getBody();
-    }
-
-    @PostMapping("/create")
-    public ResponseEntity<UserResponse> createUser(
-            @Valid @RequestBody UserRequest request) {
-        return client.createUser(request);
     }
 
     @PostMapping

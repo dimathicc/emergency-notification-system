@@ -10,6 +10,5 @@ import java.util.Optional;
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
     boolean existsByEmailOrPhoneOrTelegramId(String email, String phone, String telegramId);
-
     Optional<User> findByEmail(String email);
 }
