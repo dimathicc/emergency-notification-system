@@ -11,11 +11,11 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/api/users")
 public class UserController {
-
-    Logger log = LoggerFactory.getLogger(UserController.class);
 
     private final UserService userService;
 
@@ -24,22 +24,32 @@ public class UserController {
     }
 
     @PostMapping
-    public ResponseEntity<Long> createUser(@Valid @RequestBody UserRequest request) {
+    public ResponseEntity<UserResponse> createUser(
+            @Valid @RequestBody UserRequest request) {
         return ResponseEntity.status(HttpStatus.CREATED).body(userService.createUser(request));
     }
 
+    @GetMapping
+    public ResponseEntity<List<UserResponse>> retrieveAllUsers() {
+        return ResponseEntity.status(HttpStatus.OK).body(userService.retrieveAllUsers());
+    }
+
     @GetMapping("/{id}")
-    public ResponseEntity<UserResponse> retrieveUserById(@PathVariable Long id) {
+    public ResponseEntity<UserResponse> retrieveUserById(
+            @PathVariable Long id) {
         return ResponseEntity.status(HttpStatus.OK).body(userService.retrieveUserById(id));
     }
 
     @PatchMapping("/{id}")
-    public ResponseEntity<UserResponse> updateUser(@PathVariable Long id, @RequestBody UserRequest request) {
+    public ResponseEntity<UserResponse> updateUser(
+            @PathVariable Long id,
+            @RequestBody UserRequest request) {
         return ResponseEntity.status(HttpStatus.OK).body(userService.updateUser(id, request));
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Boolean> deleteUserById(@PathVariable Long id) {
+    public ResponseEntity<Boolean> deleteUserById(
+            @PathVariable Long id) {
         return ResponseEntity.status(HttpStatus.OK).body(userService.deleteById(id));
     }
 }

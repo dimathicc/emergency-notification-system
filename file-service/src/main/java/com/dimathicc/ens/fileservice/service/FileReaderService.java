@@ -5,23 +5,17 @@ import com.dimathicc.ens.userservice.exception.FileDownloadException;
 import com.dimathicc.ens.userservice.exception.ReadingUserFromXlsxException;
 import com.dimathicc.ens.userservice.model.User;
 import com.dimathicc.ens.userservice.repository.UserRepository;
-import lombok.RequiredArgsConstructor;
-import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
+
 
 @Service
 public class FileReaderService {

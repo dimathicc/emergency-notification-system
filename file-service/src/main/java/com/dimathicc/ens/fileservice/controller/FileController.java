@@ -14,8 +14,6 @@ import org.springframework.web.multipart.MultipartFile;
 @RequestMapping("/api/files")
 public class FileController {
 
-    Logger log = LoggerFactory.getLogger(FileController.class);
-
     private final FileReaderService readerService;
 
     public FileController(FileReaderService readerService) {
@@ -24,7 +22,6 @@ public class FileController {
 
     @PostMapping
     public ResponseEntity<Boolean> createUsersFromFile(@RequestPart MultipartFile file) {
-        log.info("MultipartFile " + file);
         return ResponseEntity.status(HttpStatus.CREATED).body(readerService.readUsersFromXlsx(file));
     }
 
