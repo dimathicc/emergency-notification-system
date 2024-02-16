@@ -4,7 +4,7 @@ spring:
   datasource:
     username: root
     password: root
-    url: jdbc:h2:mem:security-security
+    url: jdbc:h2:mem:jwt_security
     driver-class-name: org.h2.Driver
   jpa:
     hibernate:
@@ -13,7 +13,8 @@ spring:
     properties:
       hibernate:
         format_sql: true
+    database: h2
 
 token:
   signing:
-    key: 53A73E5F1C4E0A2D3B5F2D784E6A1B423D6F247D1F6E5C3A596D635A75327855
+    key: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970

@@ -5,19 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84601ce2-1429-4681-a31e-95b64b028e27" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../api-gateway/src/main/java/com/dimathicc/ens/apigateway/ApiGatewayConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/src/main/java/com/dimathicc/ens/apigateway/ApiGatewayConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api-gateway/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/exception/UserBadCredentialsException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../file-service/src/main/java/com/dimathicc/ens/fileservice/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../file-service/src/main/java/com/dimathicc/ens/fileservice/controller/FileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../file-service/src/main/java/com/dimathicc/ens/fileservice/exception/FileDownloadException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../file-service/src/main/java/com/dimathicc/ens/fileservice/exception/FileDownloadException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../file-service/src/main/java/com/dimathicc/ens/fileservice/exception/ReadingUserFromXlsxException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../file-service/src/main/java/com/dimathicc/ens/fileservice/exception/ReadingUserFromXlsxException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../file-service/src/main/java/com/dimathicc/ens/fileservice/service/FileReaderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../file-service/src/main/java/com/dimathicc/ens/fileservice/service/FileReaderService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../security-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../security-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/config/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/config/JwtAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/config/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/config/SecurityConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/controller/ExampleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/controller/ExampleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/controller/ExampleController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/controller/UserExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/exception/UserExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/dto/JwtAuthenticationResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/dto/JwtAuthenticationResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/dto/SignInRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/dto/SignInRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/dto/SignUpRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/dto/SignUpRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/model/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/service/AuthenticationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/service/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/service/JwtService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../security-service/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +32,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -100,14 +105,15 @@
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
-      "postgresql"
+      "postgresql",
+      "h2"
     ]
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.dimathicc.ens.fileservice.exception" />
       <recent name="com.dimathicc.ens.securityservice.exception" />
+      <recent name="com.dimathicc.ens.fileservice.exception" />
       <recent name="com.dimathicc.ens.userservice.exception" />
       <recent name="com.dimathicc.ens.userservice.util" />
     </key>
@@ -214,7 +220,7 @@
       <workItem from="1707303523697" duration="10816000" />
       <workItem from="1707376185617" duration="9677000" />
       <workItem from="1707472145425" duration="5618000" />
-      <workItem from="1707638356882" duration="28046000" />
+      <workItem from="1707638356882" duration="50765000" />
     </task>
     <servers />
   </component>
