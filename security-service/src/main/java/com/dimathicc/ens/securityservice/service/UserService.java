@@ -1,73 +1,90 @@
 package com.dimathicc.ens.securityservice.service;
 
-import com.dimathicc.ens.securityservice.dto.JwtAuthenticationResponse;
-import com.dimathicc.ens.securityservice.dto.SignInRequest;
-import com.dimathicc.ens.securityservice.dto.SignUpRequest;
-import com.dimathicc.ens.securityservice.dto.UserMapper;
-import com.dimathicc.ens.securityservice.exception.UserAlreadyExistsException;
-import com.dimathicc.ens.securityservice.exception.UserBadCredentialsException;
-import com.dimathicc.ens.securityservice.exception.UserNotFoundException;
-import com.dimathicc.ens.securityservice.model.User;
+import com.dimathicc.ens.securityservice.domain.model.Role;
+import com.dimathicc.ens.securityservice.domain.model.User;
 import com.dimathicc.ens.securityservice.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.authentication.BadCredentialsException;
-import org.springframework.security.authentication.InternalAuthenticationServiceException;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-
-import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
-public class UserService implements UserDetailsService {
-    private final TokenService tokenService;
-    private final UserRepository userRepository;
-    private final AuthenticationManager authenticationManager;
-    private final JwtService jwtService;
-    private final PasswordEncoder passwordEncoder;
-    private final UserMapper mapper;
+public class UserService {
+    private final UserRepository repository;
 
-    public Boolean register(SignUpRequest request) {
-        return Optional.of(userRepository.findByEmail(request.getEmail()))
-                .map(user -> {
-                    if (user.isPresent()) {
-                        throw new UserAlreadyExistsException("User with email: " + user.get().getEmail() + "already exists");
-                    } else {
-                        return request;
-                    }
-                })
-                .map(req -> mapper.mapToEntity(req, passwordEncoder))
-                .map(userRepository::saveAndFlush)
-                .isPresent();
+    /**
+     * Сохранение пользователя
+     *
+     * @return сохраненный пользователь
+     */
+    public User save(User user) {
+        return repository.save(user);
     }
 
-    public JwtAuthenticationResponse authenticate(SignInRequest request) {
-        try {
-            authenticationManager.authenticate(
-                    new UsernamePasswordAuthenticationToken(request.getEmail(), request.getPassword())
-            );
-        } catch (InternalAuthenticationServiceException e) {
-            throw new UserNotFoundException("User with email: " + request.getEmail() + " not found");
-        } catch (BadCredentialsException e) {
-            throw new UserBadCredentialsException("Bad credentials");
+
+    /**
+     * Создание пользователя
+     *
+     * @return созданный пользователь
+     */
+    public User create(User user) {
+        if (repository.existsByUsername(user.getUsername())) {
+            // Заменить на свои исключения
+            throw new RuntimeException("Пользователь с таким именем уже существует");
         }
 
-        User user = loadUserByUsername(request.getEmail());
+        if (repository.existsByEmail(user.getEmail())) {
+            throw new RuntimeException("Пользователь с таким email уже существует");
+        }
 
-        tokenService.deletePreviousUserToken(user);
-        String jwt = jwtService.generateJwt(user);
-        tokenService.createToken(user, jwt);
-
-        return new JwtAuthenticationResponse(jwt);
+        return save(user);
     }
 
-    @Override
-    public User loadUserByUsername(String username) throws UsernameNotFoundException {
-        return userRepository.findByEmail(username)
-                .orElseThrow(() -> new UserNotFoundException(username + " not found"));
+    /**
+     * Получение пользователя по имени пользователя
+     *
+     * @return пользователь
+     */
+    public User getByUsername(String username) {
+        return repository.findByUsername(username)
+                .orElseThrow(() -> new UsernameNotFoundException("Пользователь не найден"));
+
+    }
+
+    /**
+     * Получение пользователя по имени пользователя
+     * <p>
+     * Нужен для Spring Security
+     *
+     * @return пользователь
+     */
+    public UserDetailsService userDetailsService() {
+        return this::getByUsername;
+    }
+
+    /**
+     * Получение текущего пользователя
+     *
+     * @return текущий пользователь
+     */
+    public User getCurrentUser() {
+        // Получение имени пользователя из контекста Spring Security
+        var username = SecurityContextHolder.getContext().getAuthentication().getName();
+        return getByUsername(username);
+    }
+
+
+    /**
+     * Выдача прав администратора текущему пользователю
+     * <p>
+     * Нужен для демонстрации
+     */
+    @Deprecated
+    public void getAdmin() {
+        var user = getCurrentUser();
+        user.setRole(Role.ROLE_ADMIN);
+        save(user);
     }
 }

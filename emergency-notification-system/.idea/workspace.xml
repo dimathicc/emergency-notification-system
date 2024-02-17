@@ -5,23 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84601ce2-1429-4681-a31e-95b64b028e27" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/exception/UserBadCredentialsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/controller/ExampleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/domain/dto/JwtAuthenticationResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/domain/model/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/domain/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/service/AuthenticationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../security-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../security-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/config/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/config/JwtAuthenticationFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/config/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/config/SecurityConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/controller/ExampleController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/controller/UserExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/exception/UserExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/dto/JwtAuthenticationResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/dto/JwtAuthenticationResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/dto/SignInRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/dto/SignInRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/dto/SignUpRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/dto/SignUpRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/model/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/dto/ErrorResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/dto/JwtAuthenticationResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/dto/SignInRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/domain/dto/SignInRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/dto/SignUpRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/domain/dto/SignUpRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/dto/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/exception/InvalidTokenException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/exception/UserAlreadyExistsException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/exception/UserBadCredentialsException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/exception/UserCreateException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/exception/UserExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/exception/UserJwtNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/exception/UserNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/model/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/model/Token.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/model/TokenType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/repository/TokenRepository.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/service/AuthenticationService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/service/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/service/JwtService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/service/LogoutService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/service/TokenService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../security-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../security-service/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,6 +88,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "JUnit.All in security-service.executor": "Run",
+    "Maven.security-service [clean].executor": "Run",
     "Maven.user-service [clean].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -90,7 +106,7 @@
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "openjdk-17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/dmitryshvalev/Downloads/Projects/ens/file-service/src/main/java/com/dimathicc/ens/fileservice/dto",
+    "last_opened_file_path": "/Users/dmitryshvalev/Downloads/Projects/ens/security-service/src/main/java/com/dimathicc/ens/securityservice",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -118,6 +134,7 @@
       <recent name="com.dimathicc.ens.userservice.util" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice" />
       <recent name="$PROJECT_DIR$/../file-service/src/main/java/com/dimathicc/ens/fileservice/dto" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -133,7 +150,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in security-service">
+  <component name="RunManager" selected="Spring Boot.SecurityServiceApplication">
     <configuration name="All in security-service" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="security-service" />
       <option name="PACKAGE_NAME" value="" />
@@ -220,7 +237,7 @@
       <workItem from="1707303523697" duration="10816000" />
       <workItem from="1707376185617" duration="9677000" />
       <workItem from="1707472145425" duration="5618000" />
-      <workItem from="1707638356882" duration="50765000" />
+      <workItem from="1707638356882" duration="53292000" />
     </task>
     <servers />
   </component>

@@ -1,4 +1,4 @@
-package com.dimathicc.ens.securityservice.model;
+package com.dimathicc.ens.securityservice.domain.model;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -7,38 +7,38 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
-import java.util.Collections;
 import java.util.List;
 
-
-@Data
+@Entity
 @Builder
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity
 @Table(name = "users")
 public class User implements UserDetails {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "user_id_seq")
+    @SequenceGenerator(name = "user_id_seq", sequenceName = "user_id_seq", allocationSize = 1)
     private Long id;
 
-    private String email;
+    @Column(name = "username", unique = true, nullable = false)
+    private String username;
+
+    @Column(name = "password", nullable = false)
     private String password;
 
+    @Column(name = "email", unique = true, nullable = false)
+    private String email;
+
     @Enumerated(EnumType.STRING)
+    @Column(name = "role", nullable = false)
     private Role role;
-
-
-
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return Collections.singletonList(role);
-    }
-
-    @Override
-    public String getUsername() {
-        return email;
+        return List.of(new SimpleGrantedAuthority(role.name()));
     }
 
     @Override
