@@ -38,7 +38,7 @@ public class AuthenticationService {
         userService.create(user);
 
         var jwt = jwtService.generateToken(user);
-        return new JwtAuthenticationResponse(jwt);
+        return new JwtAuthenticationResponse(jwt, user.getId());
     }
 
     /**
@@ -58,6 +58,7 @@ public class AuthenticationService {
                 .loadUserByUsername(request.getUsername());
 
         var jwt = jwtService.generateToken(user);
-        return new JwtAuthenticationResponse(jwt);
+        Long userId = userService.getByUsername(user.getUsername()).getId();
+        return new JwtAuthenticationResponse(jwt, userId);
     }
 }

@@ -1,0 +1,7 @@
+server:
+  port: 1000
+
+telegram:
+  bot:
+    token: 6725676716:AAFq-CZT5GU7V-C0XCMfQRXospDwYmJa7gM
+    name: EmergencyNotificationBot

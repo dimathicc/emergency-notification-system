@@ -11,14 +11,15 @@ public class ApiGatewayConfiguration {
     public RouteLocator gatewayRouter(RouteLocatorBuilder builder) {
         return builder.routes()
                 .route(p -> p
-                        .path("/test/**")
-                        .uri("lb://api-service"))
-                .route(p -> p
-                        .path("/users/**")
+                        .path("/api/users/**")
                         .uri("lb://user-service"))
+//                TODO: connect security service to Eureka
+//                .route(p -> p
+//                        .path("/api/auth")
+//                        .uri("lb://security-service"))
                 .route(p -> p
-                        .path("/api/auth")
-                        .uri("lb://security-service"))
+                        .path("/api/files")
+                        .uri("lb://file-service"))
                 .build();
     }
 }
