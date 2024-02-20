@@ -1,6 +1,10 @@
 server:
   port: 1000
 
+spring:
+  application:
+    name: telegram-bot
+
 telegram:
   bot:
     token: 6725676716:AAFq-CZT5GU7V-C0XCMfQRXospDwYmJa7gM
