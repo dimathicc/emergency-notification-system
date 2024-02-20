@@ -5,25 +5,55 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84601ce2-1429-4681-a31e-95b64b028e27" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../api-gateway/src/main/java/com/dimathicc/ens/apigateway/ApiGatewayConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/src/main/java/com/dimathicc/ens/apigateway/ApiGatewayConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/domain/dto/JwtAuthenticationResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/domain/dto/JwtAuthenticationResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/service/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice/service/AuthenticationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/telegram-bot/src/main/java/com/dimathicc/ens/telegrambot/NotificationTelegramBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/telegram-bot/src/main/java/com/dimathicc/ens/telegrambot/NotificationTelegramBot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sender-service/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sender-service/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sender-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sender-service/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sender-service/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sender-service/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sender-service/src/main/java/com/dimathicc/ens/senderservice/SenderServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sender-service/src/main/java/com/dimathicc/ens/senderservice/controller/SenderController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sender-service/src/main/java/com/dimathicc/ens/senderservice/telegram/NotificationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sender-service/src/main/java/com/dimathicc/ens/senderservice/telegram/StatusResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sender-service/src/main/java/com/dimathicc/ens/senderservice/telegram/TelegramProxy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sender-service/src/main/resources/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sender-service/src/test/java/com/dimathicc/ens/senderservice/SenderServiceApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/../sender-service">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
         <option value="Interface" />
+        <option value="Record" />
         <option value="Class" />
       </list>
     </option>
@@ -62,8 +92,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.Build sender-service.executor": "Run",
     "JUnit.All in security-service.executor": "Run",
+    "Maven.eureka-naming-server [clean].executor": "Run",
     "Maven.security-service [clean].executor": "Run",
+    "Maven.sender [clean].executor": "Run",
+    "Maven.sender-service [clean].executor": "Run",
+    "Maven.telegram-bot [clean].executor": "Run",
     "Maven.user-service [clean].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -77,12 +112,15 @@
     "Spring Boot.EurekaNamingServerApplication.executor": "Run",
     "Spring Boot.FileServiceApplication.executor": "Run",
     "Spring Boot.SecurityServiceApplication.executor": "Run",
+    "Spring Boot.SenderApplication.executor": "Run",
+    "Spring Boot.SenderServiceApplication (1).executor": "Run",
+    "Spring Boot.SenderServiceApplication.executor": "Run",
     "Spring Boot.TelegramBotApplication.executor": "Run",
     "Spring Boot.UserServiceApplication.executor": "Run",
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "openjdk-17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/dmitryshvalev/Downloads/Projects/ens/security-service/src/main/java/com/dimathicc/ens/securityservice",
+    "last_opened_file_path": "/Users/dmitryshvalev/Downloads/Projects/ens/sender-service/src/main/java/com/dimathicc/ens/senderservice",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -104,13 +142,15 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.dimathicc.ens.senderservice.dto" />
       <recent name="com.dimathicc.ens.telegrambot.exception" />
       <recent name="com.dimathicc.ens.securityservice.exception" />
       <recent name="com.dimathicc.ens.fileservice.exception" />
       <recent name="com.dimathicc.ens.userservice.exception" />
-      <recent name="com.dimathicc.ens.userservice.util" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../sender-service/src/main/java/com/dimathicc/ens/senderservice" />
+      <recent name="$PROJECT_DIR$/../sender-service/src/main" />
       <recent name="$PROJECT_DIR$/../security-service/src/main/java/com/dimathicc/ens/securityservice" />
       <recent name="$PROJECT_DIR$/../file-service/src/main/java/com/dimathicc/ens/fileservice/dto" />
     </key>
@@ -130,7 +170,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SecurityServiceApplication">
+  <component name="RunManager" selected="Spring Boot.SenderServiceApplication">
     <configuration name="All in security-service" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="security-service" />
       <option name="PACKAGE_NAME" value="" />
@@ -172,6 +212,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SenderServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="sender-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dimathicc.ens.senderservice.SenderServiceApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dimathicc.ens.senderservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TelegramBotApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="telegram-bot" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.dimathicc.ens.telegrambot.TelegramBotApplication" />
@@ -197,9 +251,11 @@
       <item itemvalue="Spring Boot.ApiGatewayApplication" />
       <item itemvalue="Spring Boot.EurekaNamingServerApplication" />
       <item itemvalue="Spring Boot.UserServiceApplication" />
+      <item itemvalue="Spring Boot.SenderServiceApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.SenderServiceApplication" />
         <item itemvalue="JUnit.All in security-service" />
       </list>
     </recent_temporary>
@@ -226,11 +282,22 @@
       <workItem from="1707376185617" duration="9677000" />
       <workItem from="1707472145425" duration="5618000" />
       <workItem from="1707638356882" duration="53652000" />
-      <workItem from="1708341055131" duration="4595000" />
+      <workItem from="1708341055131" duration="8353000" />
+      <workItem from="1708414039233" duration="7552000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.springframework.beans.factory.UnsatisfiedDependencyException" package="org.springframework.beans.factory" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

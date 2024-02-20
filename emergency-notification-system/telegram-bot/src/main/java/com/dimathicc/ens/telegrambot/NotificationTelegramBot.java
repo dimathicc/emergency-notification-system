@@ -28,7 +28,7 @@ public class NotificationTelegramBot extends TelegramLongPollingBot {
 
         Long chatId = update.getMessage().getChatId();
         if (update.getMessage().getText().equals("/info")) {
-            SendMessage sendMessage = new SendMessage(String.valueOf(chatId), "ID for registration in notification system: " + chatId);
+            SendMessage sendMessage = new SendMessage(String.valueOf(chatId), "Your chat ID: " + chatId);
             try {
                 execute(sendMessage);
             } catch (TelegramApiException e) {

@@ -20,6 +20,9 @@ public class ApiGatewayConfiguration {
                 .route(p -> p
                         .path("/api/files")
                         .uri("lb://file-service"))
+                .route(p -> p
+                        .path("/api/sender/send_message")
+                        .uri("lb://sender-service"))
                 .build();
     }
 }
