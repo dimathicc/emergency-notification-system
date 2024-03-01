@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="api-gateway" />
+        <module name="message-template-service" />
         <module name="telegram-bot" />
         <module name="file-service" />
         <module name="eureka-naming-server" />
@@ -45,6 +46,7 @@
       <module name="ens" options="-parameters" />
       <module name="eureka-naming-server" options="-parameters" />
       <module name="file-service" options="-parameters" />
+      <module name="message-template-service" options="-parameters" />
       <module name="security-service" options="-parameters" />
       <module name="sender" options="-parameters" />
       <module name="telegram-bot" options="-parameters" />

@@ -5,26 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84601ce2-1429-4681-a31e-95b64b028e27" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api-gateway/src/main/java/com/dimathicc/ens/apigateway/ApiGatewayConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/src/main/java/com/dimathicc/ens/apigateway/ApiGatewayConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/telegram-bot/src/main/java/com/dimathicc/ens/telegrambot/NotificationTelegramBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/telegram-bot/src/main/java/com/dimathicc/ens/telegrambot/NotificationTelegramBot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sender-service/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sender-service/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sender-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sender-service/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sender-service/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sender-service/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sender-service/src/main/java/com/dimathicc/ens/senderservice/SenderServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sender-service/src/main/java/com/dimathicc/ens/senderservice/controller/SenderController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sender-service/src/main/java/com/dimathicc/ens/senderservice/telegram/NotificationService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sender-service/src/main/java/com/dimathicc/ens/senderservice/telegram/StatusResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sender-service/src/main/java/com/dimathicc/ens/senderservice/telegram/TelegramProxy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sender-service/src/main/resources/application.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sender-service/src/test/java/com/dimathicc/ens/senderservice/SenderServiceApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +22,12 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="sender-service" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -90,56 +76,56 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Build sender-service.executor": "Run",
-    "JUnit.All in security-service.executor": "Run",
-    "Maven.eureka-naming-server [clean].executor": "Run",
-    "Maven.security-service [clean].executor": "Run",
-    "Maven.sender [clean].executor": "Run",
-    "Maven.sender-service [clean].executor": "Run",
-    "Maven.telegram-bot [clean].executor": "Run",
-    "Maven.user-service [clean].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.ApiGatewayApplication.executor": "Run",
-    "Spring Boot.ApiTestServiceApplication.executor": "Run",
-    "Spring Boot.EurekaNamingServerApplication.executor": "Run",
-    "Spring Boot.FileServiceApplication.executor": "Run",
-    "Spring Boot.SecurityServiceApplication.executor": "Run",
-    "Spring Boot.SenderApplication.executor": "Run",
-    "Spring Boot.SenderServiceApplication (1).executor": "Run",
-    "Spring Boot.SenderServiceApplication.executor": "Run",
-    "Spring Boot.TelegramBotApplication.executor": "Run",
-    "Spring Boot.UserServiceApplication.executor": "Run",
-    "git-widget-placeholder": "main",
-    "jdk.selected.JAVA_MODULE": "openjdk-17",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/dmitryshvalev/Downloads/Projects/ens/sender-service/src/main/java/com/dimathicc/ens/senderservice",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.16920471",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "vcs.Git",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build sender-service.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.All in security-service.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.eureka-naming-server [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.security-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.sender [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.sender-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.telegram-bot [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.user-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.ApiGatewayApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ApiTestServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.EurekaNamingServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.FileServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.SecurityServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.SenderApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.SenderServiceApplication (1).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.SenderServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.TelegramBotApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.UserServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/dmitryshvalev/Downloads/Projects/ens/sender-service/src/main/java/com/dimathicc/ens/senderservice&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.16920471&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql",
-      "h2"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;,
+      &quot;h2&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.dimathicc.ens.senderservice.dto" />
@@ -205,6 +191,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MessageTemplateServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="message-template-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dimathicc.ens.messagetemplateservice.MessageTemplateServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SecurityServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="security-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.dimathicc.ens.securityservice.SecurityServiceApplication" />
@@ -245,6 +238,7 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.All in security-service" />
+      <item itemvalue="Spring Boot.MessageTemplateServiceApplication" />
       <item itemvalue="Spring Boot.TelegramBotApplication" />
       <item itemvalue="Spring Boot.FileServiceApplication" />
       <item itemvalue="Spring Boot.SecurityServiceApplication" />
@@ -283,7 +277,8 @@
       <workItem from="1707472145425" duration="5618000" />
       <workItem from="1707638356882" duration="53652000" />
       <workItem from="1708341055131" duration="8353000" />
-      <workItem from="1708414039233" duration="7552000" />
+      <workItem from="1708414039233" duration="9546000" />
+      <workItem from="1708432202384" duration="3733000" />
     </task>
     <servers />
   </component>
